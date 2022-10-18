@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <main id="main">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"><img src="home.png" style="width: 1rem;"/>Home</a>
+            <p class="navTitles">GRAPHS</p>
+            <hr class="underline">
+            <a href="#">Air Readings</a>
+            <a href="#">Soil Readings</a>
+            <p class="navTitles">DATABASE</p>
+            <hr class="underline">
+            <a href="#">Tables</a>
+          </div>
+        <section class="firstSection">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+            <h2 class="title">Crop Monitoring & Control Using IoT</h2>
+            <div class="farm background"></div>
+            <p class="problemStatement">By 2023, the Brong Ahafo Region of Ghana will have used technology to advance agriculture using AI,
+                 advanced irrigation and machinery to help solve the traditional methods used in agriculture which 
+                 can help maximize agriculture yields and help promote economic growth whiles providing employment for 
+                 the communities at large. </p>
+        </section>
+        <section class="conditions-grid">
+            <section class="results">
+                <h3>Overall Conditions</h3>
+                <div class="circularResults">
+                    <h2 class="status">Excellent</h2>
+                </div>
+            </section>
+            <section class="results grid-col-2">
+                <div class="liveReadingsTitle">
+                    <h4 class="liveReadings">Live Readings</h4>
+                    <div class="dotInMotion"></div>
+                </div>
+                <div class="resultsPart1">
+                    <div class="temperature">
+                        <div class="temp-pic background"></div>
+                        <h1 class="temp-reading">20&#8451</h1>
+                    </div>
+                    <div class="soilpH">
+                        <h4>Soil pH</h4>
+                        <div class="pHColor"></div>
+                        <div class="pHLabelling">
+                            <span>&#x2022</span><span>1</span><span>&#x2022</span><span>3</span><span>&#x2022</span><span>5</span><span>&#x2022</span><span>7</span><span>&#x2022</span><span>9</span><span>&#x2022</span><span>11</span><span>&#x2022</span><span>13</span><span>&#x2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="resultsPart2 resultsPart2-grid">
+                    <div class="collectedReadings collectedReadings1">
+                        <div class="elementReading">
+                            <h1>12 km/h</h1>
+                        </div>
+                        <div class="elementDetails">
+                            <h4 class="element">Wind
+                                <hr>
+                            </h4>
+                            <div class="elementPic background elementPic1"></div>
+                        </div>
+                    </div>
+                    <div class="collectedReadings collectedReadings2">
+                        <div class="elementReading">
+                            <h1>1380 W/&#13217</h1>
+                        </div>
+                        <div class="elementDetails">
+                            <h4 class="element">Sunlight
+                                <hr>
+                            </h4>
+                            <div class="elementPic background elementPic2"></div>
+                        </div>
+                    </div>
+                    <div class="collectedReadings collectedReadings3">
+                        <div class="elementReading">
+                            <h1>18.25</h1>
+                        </div>
+                        <div class="elementDetails">
+                            <h4 class="element">Soil Moisture
+                                <hr>
+                            </h4>
+                            <div class="elementPic background elementPic3"></div>
+                        </div>
+                    </div>
+                    <div class="collectedReadings collectedReadings4">
+                        <div class="elementReading">
+                            <h1>63%</h1>
+                        </div>
+                        <div class="elementDetails">
+                            <h4 class="element">Humidity
+                                <hr>
+                            </h4>
+                            <div class="elementPic background elementPic4"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+</body>
+
+</html>

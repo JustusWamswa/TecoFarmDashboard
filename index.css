@@ -1,0 +1,267 @@
+body,
+html {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }  
+
+  .navTitles{
+    color: white;
+  }
+.underline{
+    width: 80%;
+    height: 0.2px;
+    color: beige;
+}
+.title {
+    color: black;
+    text-align: center;
+}
+
+.farm {
+    background-image: url(farm.jpg);
+    width: 100%;
+    height: 60vh;
+}
+
+.problemStatement {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+}
+
+.conditions-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    background-color: rgb(237, 237, 237);
+}
+
+.resultsPart2-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+}
+
+.grid-col-2 {
+    grid-column: span 2;
+}
+
+.results {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgb(170, 170, 170);
+}
+
+h4 {
+    color: dimgray;
+}
+
+h3 {
+    color: rgb(27, 27, 27);
+    text-align: center;
+}
+
+h2.status {
+    color: white;
+    font-size: 3rem;
+}
+
+.circularResults {
+    background: linear-gradient(65deg, rgba(48, 221, 67, 1) 0%, rgba(33, 210, 77, 1) 30%, rgba(57, 236, 147, 1) 100%);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin: 0rem auto 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultsPart1 {
+    display: flex;
+}
+
+.liveReadingsTitle {
+    display: flex;
+    align-items: center;
+}
+
+.liveReadings {
+    color: black;
+}
+
+.dotInMotion {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    animation: opacity 1s infinite alternate;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+}
+
+.soilpH {
+    width: 100%;
+    padding: 0rem 5rem;
+}
+
+.temp-pic {
+    background-image: url(weather-icon.png);
+    width: 5rem;
+    height: 5rem;
+    margin-right: 3rem;
+}
+
+.temp-reading {
+    font-size: 3rem;
+}
+
+.pHColor {
+    background: linear-gradient(90deg, rgba(240, 9, 9, 1) 0%, rgba(215, 213, 9, 1) 25%, rgba(95, 213, 92, 1) 50%, rgba(50, 64, 213, 1) 75%, rgba(157, 0, 255, 1) 100%);
+    height: 1rem;
+}
+
+.pHLabelling {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(62, 62, 62);
+}
+
+.collectedReadings {
+    border-radius: 0.2rem;
+}
+
+.collectedReadings1 {
+    background: linear-gradient(65deg, rgba(42, 73, 180, 1) 0%, rgba(53, 41, 203, 1) 50%, rgba(101, 57, 236, 1) 100%);
+}
+
+.collectedReadings2 {
+    background: linear-gradient(65deg, rgba(42, 180, 134, 1) 0%, rgba(41, 189, 203, 1) 50%, rgba(57, 208, 236, 1) 100%);
+}
+
+.collectedReadings3 {
+    background: linear-gradient(65deg, rgba(236, 110, 57, 1) 0%, rgba(203, 163, 41, 1) 50%, rgba(195, 207, 49, 1) 100%);
+}
+
+.collectedReadings4 {
+    background: linear-gradient(65deg, rgba(125, 42, 180, 1) 0%, rgba(152, 41, 203, 1) 50%, rgba(228, 57, 236, 1) 100%);
+}
+
+.element {
+    color: white;
+    font-weight: 200;
+}
+
+hr {
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: white;
+    border-top: 0rem;
+    border-left: 0rem;
+    margin-left: 0;
+}
+
+.elementReading {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.elementDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.elementPic {
+    width: 2rem;
+    height: 2rem;
+}
+
+.elementPic1 {
+    background-image: url(wind.png);
+}
+
+.elementPic2 {
+    background-image: url(sun.png);
+}
+
+.elementPic3 {
+    background-image: url(soil.png);
+}
+
+.elementPic4 {
+    background-image: url(humidity.png);
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

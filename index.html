@@ -14,7 +14,7 @@
 <body>
     <main id="main">
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
             <a href="#"><img src="home.png" style="width: 1rem;"/>Home</a>
             <p class="navTitles">GRAPHS</p>
             <hr class="underline">
@@ -25,7 +25,7 @@
             <a href="#">Tables</a>
           </div>
         <section class="firstSection">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+            <span style="font-size:30px; cursor:pointer" id="openNav">&#9776; More</span>
             <h2 class="title">Crop Monitoring & Control Using IoT</h2>
             <div class="farm background"></div>
             <p class="problemStatement">By 2023, the Brong Ahafo Region of Ghana will have used technology to advance agriculture using AI,
@@ -37,7 +37,7 @@
             <section class="results">
                 <h3>Overall Conditions</h3>
                 <div class="circularResults">
-                    <h2 class="status">Excellent</h2>
+                    <h2 class="status"></h2>
                 </div>
             </section>
             <section class="results grid-col-2">
@@ -48,7 +48,7 @@
                 <div class="resultsPart1">
                     <div class="temperature">
                         <div class="temp-pic background"></div>
-                        <h1 class="temp-reading">20&#8451</h1>
+                        <h1 class="temp-reading"></h1>
                     </div>
                     <div class="soilpH">
                         <h4>Soil pH</h4>
@@ -61,7 +61,7 @@
                 <div class="resultsPart2 resultsPart2-grid">
                     <div class="collectedReadings collectedReadings1">
                         <div class="elementReading">
-                            <h1>12 km/h</h1>
+                            <h1 class="windReading">12 km/h</h1>
                         </div>
                         <div class="elementDetails">
                             <h4 class="element">Wind
@@ -94,7 +94,7 @@
                     </div>
                     <div class="collectedReadings collectedReadings4">
                         <div class="elementReading">
-                            <h1>63%</h1>
+                            <h1 class="humidityReading"></h1>
                         </div>
                         <div class="elementDetails">
                             <h4 class="element">Humidity

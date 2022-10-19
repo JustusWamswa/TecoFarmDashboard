@@ -110,7 +110,8 @@ h3 {
 
 h2.status {
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .circularResults {
@@ -164,7 +165,7 @@ h2.status {
 }
 
 .temp-reading {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .pHColor {
@@ -214,7 +215,7 @@ hr {
 
 .elementReading {
     color: white;
-    font-size: 1.5rem;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -226,7 +227,7 @@ hr {
 }
 
 .elementPic {
-    width: 2rem;
+    width: 1.5rem;
     height: 2rem;
 }
 
@@ -264,4 +265,11 @@ hr {
     100% {
         opacity: 1;
     }
+}
+@media screen and (max-width: 600px){
+    .conditions-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
 }

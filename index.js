@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             status.innerHTML = "Excellent";
             circularResults.style.background = 'linear-gradient(65deg, rgba(48, 221, 67, 1) 0%, rgba(33, 210, 77, 1) 30%, rgba(57, 236, 147, 1) 100%);';
         }else{
-            status.innerHTML = "Bad";
+            status.innerHTML = "Not appropraite";
             circularResults.style.background = 'linear-gradient(65deg, rgb(210, 25, 25) 0%, rgb(207, 38, 64) 30%, rgb(214, 26, 32) 100%)';
         }
     })

@@ -11,6 +11,13 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#openNav {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -22,41 +29,44 @@ html {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-  }
-  
-  .sidenav a {
+}
+
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 1.2rem;
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
+}
+
+.sidenav a:hover {
     color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
+}
+
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  #main {
+}
+
+#main {
     transition: margin-left .5s;
     padding: 16px;
-  }  
+}
 
-  .navTitles{
+.navTitles {
     color: white;
-  }
-.underline{
+}
+
+.underline {
     width: 80%;
     height: 0.2px;
     color: beige;
 }
+
 .title {
     color: black;
     text-align: center;
@@ -266,10 +276,38 @@ hr {
         opacity: 1;
     }
 }
-@media screen and (max-width: 600px){
-    .conditions-grid{
-        display: flex;
-        flex-direction: column;
+
+@media screen and (max-width: 800px) {
+    .conditions-grid {
+        display: block;
     }
-    
+
+    .results {
+        margin-bottom: 1.5rem;
+    }
+
+    .resultsPart2-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .resultsPart1 {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .soilpH {
+        margin: 3rem 0rem;
+        padding: 0rem 1rem;
+    }
+
+    .circularResults {
+        width: 15rem;
+        height: 15rem;
+        margin: 2rem auto;
+    }
+
+    .problemStatement {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    }
 }
